@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://kit.fontawesome.com/183280f8d9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Nav bar -->
+    <div class="nav">
+
+        <!-- Logo -->
+        <div class="nav-child">
+            <h2 class="font-dancing-srcipt text-4xl font-semibold text-white"><a href="./index.html">Shauzk</a></h2>
+        </div>
+
+        <!-- Nav items -->
+        <div id="mobile-slide"
+            class="fixed bg-slate-400 w-screen md:size-fit flex justify-center items-center px-3 h-screen top-0 right-0 z-20 md:bg-transparent md:static duration-700">
+
+            <div id="mobile-slide-close"
+                class="absolute top-3 right-5 bg-gray-900 size-9 rounded-full flex justify-center items-center md:hidden">
+                <button class="text-xl text-slate-200 ">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div
+                class=" flex flex-col space-y-8 justify-center items-center text-3xl md:flex-row md:space-y-0 md:space-x-7 md:text-xl">
+                <button class="nav-item"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="nav-item"><i class="fa-solid fa-truck"></i></button>
+            </div>
+
+        </div>
+
+        <!-- Dark Mode and account -->
+        <div class="flex space-x-3 justify-center items-center">
+
+            <!-- Switch mood and account-->
+            <div class="flex space-x-3 md:text-xl">
+                <button class="nav-item"><i class="fa-solid fa-moon"></i></button>
+                <!-- <button class="nav-item"><i class="fa-solid fa-lightbulb"></i></button> -->
+                <button class="nav-item text-orange-800"><i class="fa-solid fa-user"></i></button>
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden duration-700 cursor-pointer text-xl pr-3">
+                <i class="fa-solid fa-bars text-black"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mx-10 my-10 md:mx-20 lg:mx-32 sm:flex justify-center space-y-5 sm:space-y-0 sm:space-x-7">
+
+        <!-- My Cart -->
+
+        <div class="relative overflow-x-auto h-fit shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 ">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Product name
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Category
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Quantity
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Price
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr class="odd:bg-white  even:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                            Apple MacBook Pro 17"
+                        </th>
+                        <td class="px-6 py-4">
+                            Laptop
+                        </td>
+                        <td class="px-6 py-4 flex space-x-2 items-center">
+                            <i class="fa-solid fa-minus cursor-pointer hover:text-orange-600"></i>
+                            <p>1</p>
+                            <i class="fa-solid fa-plus cursor-pointer hover:text-orange-600"></i>
+                        </td>
+                        <td class="px-6 py-4">
+                            $2999
+                        </td>
+                        <td class="px-6 py-4">
+                            <i class="fa-regular fa-circle-xmark cursor-pointer hover:text-red-600"></i>
+                        </td>
+                    </tr>
+
+                    <tr class="odd:bg-white  even:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                            Apple MacBook Pro 17"
+                        </th>
+                        <td class="px-6 py-4">
+                            Laptop
+                        </td>
+                        <td class="px-6 py-4 flex space-x-2 items-center">
+                            <i class="fa-solid fa-minus cursor-pointer hover:text-orange-600"></i>
+                            <p>1</p>
+                            <i class="fa-solid fa-plus cursor-pointer hover:text-orange-600"></i>
+                        </td>
+                        <td class="px-6 py-4">
+                            $2999
+                        </td>
+                        <td class="px-6 py-4">
+                            <i class="fa-regular fa-circle-xmark cursor-pointer hover:text-red-600"></i>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="sm:w-1/3 space-y-5">
+            
+            <h2 class="font-semibold text-slate-600 text-lg"> <i class="fa-solid fa-clipboard-list"></i> Cart Summary</h2>
+            
+            <div class="bg-slate-50 shadow-md p-10 space-y-6">
+                
+                <div class="flex justify-between items center font-semibold text-slate-700 text-xl">
+                    <h3>Subtotal</h3>
+                    <h3>$ 545</h3>
+                </div>
+
+                <div class="flex justify-between items center font-semibold text-slate-700 text-xl">
+                    <h3>Shipping</h3>
+                    <h3>$ 10</h3>
+                </div>
+
+                <hr>
+
+                <div class="flex justify-between items center font-semibold text-slate-700 text-xl">
+                    <h3>Total</h3>
+                    <h3>$ 555</h3>
+                </div>
+                
+                <button class="w-full rounded-lg text-xl px-2 py-1 font-semibold bg-green-500 hover:bg-green-700 duration-300 text-slate-100">Proceed to Checkout</button>
+
+
+            </div>
+        
+        </div>
+
+
+    </div>
+
+</body>
+<script src="../assets/index.js"></script>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://kit.fontawesome.com/183280f8d9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Nav bar -->
+    <div class="nav">
+        
+        <!-- Logo -->
+        <div class="nav-child">
+            <h2 class="font-dancing-srcipt text-4xl font-semibold text-white">Shauzk</h2>
+        </div>
+        
+        <!-- Nav items -->
+        <div id="mobile-slide" class="fixed bg-slate-400 w-screen flex justify-center items-center px-3 h-screen top-0 right-0 z-30  md:bg-transparent md:static duration-700">
+            
+            <div id="mobile-slide-close" class="absolute top-3 right-5 bg-gray-900 size-9 rounded-full flex justify-center items-center md:hidden">
+                <button class="text-xl text-slate-200 ">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class=" flex flex-col space-y-8 justify-center items-center text-3xl md:flex-row md:space-y-0 md:space-x-7 md:text-xl">
+                <button class="nav-item"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="nav-item"><i class="fa-solid fa-truck"></i></button>
+            </div>
+        
+        </div>
+
+        <!-- Dark Mode and account -->
+        <div class="flex space-x-3 justify-center items-center">
+            
+            <!-- Switch mood and account-->
+            <div class="flex space-x-3 md:text-xl">
+                <button class="nav-item"><i class="fa-solid fa-moon"></i></button>
+                <!-- <button class="nav-item"><i class="fa-solid fa-lightbulb"></i></button> -->
+                <button class="nav-item text-orange-800"><i class="fa-solid fa-user"></i></button>
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden duration-700 cursor-pointer text-xl pr-3">
+                <i class="fa-solid fa-bars text-black"></i>
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- Hero Section -->
+    <div class="">
+        <div class="relative">
+            <img class="w-full" src="../assets/image/hero.jpg" alt="">
+        </div>
+        <div class="absolute top-[70px] left-8 space-y-2 xl:space-y-7 sm:top-32 md:top-36 xl:top-48">
+            <p class="text-slate-100 font-comfortaa font-bold p-1 w-fit text-sm md:text-xl xl:text-3xl">New Product!</p>
+            <p class="text-slate-100 font-semibold font-comfortaa p-1 w-fit text-sm md:text-xl xl:text-3xl">New product name and description</p>
+            
+            <button class="text-slate-100 font-comfortaa font-semibold border-b-2 pb-1 md:pb-2 border-cyan-300 hover:text-gray-600 text-sm md:text-xl xl:text-2xl duration-300 flex justify-center items-center">
+                <p class="pe-2"> <a href="./product.html">all products</a> </p>
+                <i class="fa-solid fa-angle-right"></i> 
+            </button>
+        
+        </div>
+    </div>
+
+    <!-- featured products-->
+    <div class="mx-10 my-7 md:mx-20 lg:mx-32 space-y-5">
+        
+        <div>
+            <h2 class="text-slate-600 font-medium">Featured products</h2>
+        </div>
+        
+        <!-- products -->
+        <div class=" grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5">
+            
+            <div class="flex flex-col justify-center items-center space-y-1">
+                <div class="relative"><img class="rounded-md cursor-pointer hover:scale-105 duration-300" src="../assets/image/Rabbit.jpeg" alt="">
+                    <div class="absolute top-1 left-2">
+                        <button class="text-white hover:text-pink-600"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <p class="font-medium text-slate-500 text-sm">product 1</p>
+                <p class="font-medium text-sm text-slate-600">Nike</p>
+                <p class="font-medium text-sm text-slate-700">$987.65</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center space-y-1">
+                <div class="relative"><img class="rounded-md cursor-pointer hover:scale-105 duration-300" src="../assets/image/Rabbit.jpeg" alt="">
+                    <div class="absolute top-1 left-2">
+                        <button class="text-white hover:text-pink-600"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <p class="font-medium text-slate-500 text-sm">product 1</p>
+                <p class="font-medium text-sm text-slate-600">Nike</p>
+                <p class="font-medium text-sm text-slate-700">$987.65</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center space-y-1">
+                <div class="relative"><img class="rounded-md cursor-pointer hover:scale-105 duration-300" src="../assets/image/Rabbit.jpeg" alt="">
+                    <div class="absolute top-1 left-2">
+                        <button class="text-white hover:text-pink-600"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <p class="font-medium text-slate-500 text-sm">product 1</p>
+                <p class="font-medium text-sm text-slate-600">Nike</p>
+                <p class="font-medium text-sm text-slate-700">$987.65</p>
+            </div>
+
+            <div class="flex flex-col justify-center items-center space-y-1">
+                <div class="relative"><img class="rounded-md cursor-pointer hover:scale-105 duration-300" src="../assets/image/Rabbit.jpeg" alt="">
+                    <div class="absolute top-1 left-2">
+                        <button class="text-white hover:text-pink-600"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <p class="font-medium text-slate-500 text-sm">product 1</p>
+                <p class="font-medium text-sm text-slate-600">Nike</p>
+                <p class="font-medium text-sm text-slate-700">$987.65</p>
+            </div>
+
+            <div class="flex flex-col justify-center">
+                <h1 class="font-bold text-slate-700 cursor-pointer hover:scale-x-105 duration-700"> <a href="./product.html">explore </a> <i class="fa-solid fa-angles-right"></i></h1>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="../assets/index.js"></script>
+</html>
